@@ -105,7 +105,7 @@ public class Achievements : MonoBehaviour {
 
 		a = new Achievement();
 		a.achieved = false;
-		a.title = "Skynet Open Business";
+		a.title = "Skynet Open for Business";
 		a.subTitle = "Build 10 Factories";
 		a.check = () => {return Master.GameStats.GetBirths(typeof(FactoryStatic)) >= 10;};
 		_achievements.Add(a);
@@ -119,14 +119,14 @@ public class Achievements : MonoBehaviour {
 
 		a = new Achievement();
 		a.achieved = false;
-		a.title = "Git off my lawn";
+		a.title = "Git Off My Lawn";
 		a.subTitle = "Build 10 Houses";
 		a.check = () => {return Master.GameStats.GetBirths(typeof(HouseStatic)) >= 10;};
 		_achievements.Add(a);
 
 		a = new Achievement();
 		a.achieved = false;
-		a.title = "You Be Assimilated";
+		a.title = "You Will Be Assimilated";
 		a.subTitle = "Spawn 200 Robots";
 		a.check = () => {return Master.GameStats.GetBirths(typeof(RobotUnit)) >= 200;};
 		_achievements.Add(a);
@@ -140,7 +140,7 @@ public class Achievements : MonoBehaviour {
 
 		a = new Achievement();
 		a.achieved = false;
-		a.title = "Like Rabbits...";
+		a.title = "Like Rabbits..?";
 		a.subTitle = "Spawn 200 Humans";
 		a.check = () => {return Master.GameStats.GetBirths(typeof(HumanUnit)) >= 200;};
 		_achievements.Add(a);
@@ -155,7 +155,7 @@ public class Achievements : MonoBehaviour {
 		a = new Achievement();
 		a.achieved = false;
 		a.title = "Lumberjack";
-		a.subTitle = "Destroyed all trees";
+		a.subTitle = "Destroy all trees";
 		a.check = () => {return Master.GameStats.AllTreesDestroyed;};
 		_achievements.Add(a);
 
@@ -203,7 +203,7 @@ public class Achievements : MonoBehaviour {
 
 		a = new Achievement();
 		a.achieved = false;
-		a.title = "I don't want to set the world on fire";
+		a.title = "I don't want to set the world on fire!";
 		a.subTitle = "Death Bot has come online";
 		a.check = () => {return Master.GameStats.GetBirths(typeof(DeathBot)) >= 1;};
 		_achievements.Add(a);
