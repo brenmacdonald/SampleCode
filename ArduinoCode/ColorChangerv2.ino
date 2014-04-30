@@ -127,7 +127,7 @@ void CycleColors(){
 
 void setup(){
   Serial.begin(9600);
-  analogReference(EXTERNAL);
+  analogReference(EXTERNAL);//I use the 3.3v analog line as a reference. Better precision for the temp sensor in exchange for constraining the temperature range.
   strip.begin();
   strip.show();
 }
